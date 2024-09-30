@@ -4,6 +4,7 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import { FiShoppingBag } from "react-icons/fi";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import Slider from "./Slider";
 const BestSellingProduct = () => {
   
   const jewelryProducts = [
@@ -31,6 +32,18 @@ const BestSellingProduct = () => {
       off: 50, // 5% off
       img: "/Images/roundring.png",
     },
+    {
+      title: "Diamond Ring",
+      price: 3500,
+      off: 20, // 20% off
+      img: "/Images/diomondEar.png",
+    },
+    {
+      title: "Silver Bracelet",
+      price: 250,
+      off: 10, // 10% off
+      img: "/Images/neckles.png",
+    },
   ];
 
   return (
@@ -47,7 +60,7 @@ const BestSellingProduct = () => {
         </Link>
       </div>
 
-      <div className="py-6">
+      {/* <div className="py-6">
         <div className=" grid grid-cols-4 gap-6 p-2">
           {jewelryProducts.map((product, index) => (
             <div key={index} className="slider-card ">
@@ -86,6 +99,9 @@ const BestSellingProduct = () => {
             </div>
           ))}
         </div>
+      </div> */}
+      <div className="py-6">
+      <Slider productsData={jewelryProducts}/>
       </div>
 
       {/* -----------------Adervrtisment posters (find your perfect figt) ----------------- */}

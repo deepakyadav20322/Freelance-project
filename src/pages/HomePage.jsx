@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection'
 import NewThing from '../components/NewThing'
-import HomeCategory from '../components/HomeCategory'
+import ShopByCategory from '../components/ShopByCategory'
 import Devide from '../components/Devide'
 
 import FromOurBlog from '../components/FromOurBlog'
@@ -12,13 +12,14 @@ import FollowUsInstagram from '../components/FollowUsInstagram'
 import EverydayElegance from '../components/EverydayElegance'
 
 
+
 const HomePage = () => {
   return (
-<>    
+<div className='overflow-hidden'>    
      <HeroSection/>
      <NewThing  />
      <Devide/>
-     <HomeCategory  />
+     <ShopByCategory  />
      <Devide/>
      <EverydayElegance/>
      <Devide/>
@@ -32,7 +33,7 @@ const HomePage = () => {
      <Devide/>
      <GetInTouch/>
 
-</>
+</div>
   )
 }
 

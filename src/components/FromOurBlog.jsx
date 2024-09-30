@@ -80,8 +80,6 @@ const FromOurBlog = () => {
         </div>
         </div>
 
-
-
         </section>
       );
     };

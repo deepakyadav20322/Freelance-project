@@ -3,11 +3,11 @@ import React from 'react'
   import { FiShoppingBag } from "react-icons/fi";
   import { IoShareSocialOutline } from "react-icons/io5";
   import { Link } from "react-router-dom";
+import Slider from './Slider';
 
   const EverydayElegance = () => {
     
     const jewelryProducts = [
-     
      
       {
         title: "Silver Bracelet",
@@ -33,6 +33,18 @@ import React from 'react'
         off: 20, // 20% off
         img: "/Images/diomondEar.png",
       },
+      {
+        title: "Pearl Earrings",
+        price: 500,
+        off: 50, // 5% off
+        img: "/Images/roundring.png",
+      },
+      {
+        title: "Gold Necklace",
+        price: 1200,
+        off: 15, // 15% off,
+        img: "/Images/Earings.png",
+      },
     ];
   
     return (
@@ -50,7 +62,7 @@ import React from 'react'
           <p className='text-sm font-medium text-[#6e3000] pt-2'>DISCOVER ALL TRENDS</p>
         </div>
   
-        <div className="py-6">
+        {/* <div className="py-6">
           <div className=" grid grid-cols-4 gap-6 p-2">
             {jewelryProducts.map((product, index) => (
               <div key={index} className="slider-card ">
@@ -89,8 +101,12 @@ import React from 'react'
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
   
+       <div className='py-6'>
+        <Slider productsData={jewelryProducts}/>
+       </div>
+
         {/* -----------------Adervrtisment posters (find your perfect figt) ----------------- */}
         <div className="grid grid-cols-2 gap-3 px-12 my-14">
           <div className="grid grid-rows-3 gap-3 relative">

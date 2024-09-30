@@ -13,3 +13,41 @@
   border-image-source: linear-gradient(139.58deg, #E66E06 1.18%, #6E3000 100%);
   border-image-slice: 1;
 }
+
+
+
+
+/*========================  Swiper js css ( START ) --------------------------------- */
+.swiper {
+  padding-bottom: 24px;
+}
+.swiper-pagination {
+  bottom: 0px !important ; /* Adjust this value to move the pagination circles up or down */
+  display: flex;
+  justify-content: center;  /* Center align dots */
+}
+
+/* Ensure pagination dots are properly positioned at the bottom */
+.swiper-pagination-bullets {
+  bottom: 15px !; /* Move pagination dots lower */
+  display: flex;
+  justify-content: center; /* Center align dots */
+}
+
+.swiper-pagination-bullet {
+  background-color: #333; 
+  opacity: 0.7; 
+  margin: 0 4px; /* Add some space between the dots */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffcc00; /* Color of active dot */
+
+  opacity: 1; 
+  width: 18px;  
+  height: 10px;  
+  border-radius: 20px;  
+  transition: all 0.2s; 
+}
+
+/*========================swiper js css ( END ) --------------------------------- */
