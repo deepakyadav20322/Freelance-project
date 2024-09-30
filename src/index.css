@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-gradient {
+  background: linear-gradient(90deg, #E66E06 0%, #6E3000 100%);
+}
+
+.custom-gradient-border {
+  border: 6px solid;
+  border-image-source: linear-gradient(139.58deg, #E66E06 1.18%, #6E3000 100%);
+  border-image-slice: 1;
+}
