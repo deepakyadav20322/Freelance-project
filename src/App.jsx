@@ -12,6 +12,7 @@ import Cart from './pages/Cart';
 import Checkout from './components/Checkout';
 import ConfirmationPage from './components/ConfirmationPage';
 import AboutPage from './pages/AboutPage';
+import Blog from './pages/BlogPage';
 
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
       <Route path='/cart' element={<Cart/>} />
       <Route path='/checkout' element={<Checkout/>} />
       <Route path='/ConfirmationPage' element={<ConfirmationPage/>} />
+      <Route path='/blog' element={<Blog/>} />
+      <Route path='*' element={<h1 className=''>Page Not Found</h1>} />
     
       
     </Routes>

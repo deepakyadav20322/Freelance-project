@@ -31,10 +31,10 @@ const Header = () => {
           <a href="/" className="text-gray-600 hover:text-black">
            Gifting
           </a>
-          <a href="/" className="text-gray-600 hover:text-black">
+          <a href="/product" className="text-gray-600 hover:text-black">
             Shop By Category
           </a>
-          <a href="/" className="text-gray-600 hover:text-black">
+          <a href="/product" className="text-gray-600 hover:text-black">
             Shop By Collection
           </a>
           <a href="/" className="text-gray-600 hover:text-black">
